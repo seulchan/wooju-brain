@@ -1,142 +1,133 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="1200" height="440" viewBox="0 0 1200 440"
+     width="1200" height="470" viewBox="0 0 1200 470"
      role="img" aria-labelledby="hero-title hero-desc">
   <title id="hero-title">wooju-brain: what survives across runs</title>
-  <desc id="hero-desc">A dark system map showing unprocessed inbox material flowing into four distinct boundaries: evidence, world knowledge, personal memory, and action context.</desc>
+  <desc id="hero-desc">A local-first memory boundary where inbox material is curated into evidence, world knowledge, personal memory, or action context.</desc>
 
-  <rect width="1200" height="440" rx="28" fill="#101312"/>
-  <path d="M664 48V392" stroke="#2A332E" stroke-width="1"/>
-  <path d="M64 86H96" stroke="#E5A15F" stroke-width="4"/>
+  <rect width="1200" height="470" rx="28" fill="#101312"/>
 
-  <g id="title-block">
-    <text x="64" y="66"
+  <g id="identity">
+    <text x="56" y="58"
           fill="#E5A15F"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="16" letter-spacing="1.7">LOCAL-FIRST / PERSONAL KNOWLEDGE + MEMORY</text>
+          font-size="16" font-weight="600" letter-spacing="2">LOCAL-FIRST / PERSONAL KNOWLEDGE + MEMORY</text>
 
-    <text x="64" y="154"
+    <text x="56" y="145"
           fill="#F3F0E8"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="68" font-weight="700">wooju-brain</text>
-    <text x="64" y="208"
+          font-size="68" font-weight="760" letter-spacing="-2">wooju-brain</text>
+    <text x="56" y="194"
           fill="#F3F0E8"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="36" font-weight="600">what survives across runs</text>
+          font-size="34" font-weight="680">what survives</text>
+    <text x="56" y="235"
+          fill="#F3F0E8"
+          font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+          font-size="34" font-weight="680">across runs</text>
 
-    <text x="64" y="258"
+    <text x="56" y="286"
           fill="#C9D0C8"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="20">A durable memory boundary for humans and long-lived</text>
-    <text x="64" y="286"
+          font-size="21">A durable memory boundary for humans and</text>
+    <text x="56" y="317"
           fill="#C9D0C8"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="20">AI assistants.</text>
+          font-size="21">long-lived AI assistants.</text>
 
-    <path d="M64 324H608" stroke="#2A332E" stroke-width="1"/>
-    <circle cx="64" cy="324" r="4" fill="#E5A15F"/>
-    <text x="64" y="356"
+    <circle cx="56" cy="364" r="4" fill="#E5A15F"/>
+    <text x="74" y="370"
           fill="#AEB8AF"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="15" letter-spacing="1">HUMANS CAPTURE → AGENTS CURATE → CONTEXT COMPOUNDS</text>
-    <text x="64" y="385"
+          font-size="17" letter-spacing="1">CAPTURE → CURATE → RETAIN</text>
+
+    <path d="M56 401H602" stroke="#2A332E" stroke-width="1"/>
+    <text x="56" y="430"
           fill="#77847B"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="16">provenance · time · boundaries · selective persistence</text>
+          font-size="16">provenance · time · selective persistence</text>
   </g>
 
-  <g id="boundary-map" transform="translate(704 48)">
-    <text x="0" y="18"
+  <path d="M658 54V408" stroke="#2A332E" stroke-width="1"/>
+
+  <g id="routing-map">
+    <text x="700" y="58"
           fill="#88938B"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="15" letter-spacing="1.1">ONE REPOSITORY / FOUR BOUNDARIES</text>
+          font-size="16" font-weight="600" letter-spacing="1.8">ONE REPOSITORY / FOUR BOUNDARIES</text>
 
-    <rect x="0" y="42" width="424" height="52" rx="14" fill="#19201C" stroke="#3A4640"/>
-    <circle cx="25" cy="68" r="7" fill="#E5A15F"/>
-    <text x="48" y="75"
+    <rect x="700" y="92" width="444" height="58" rx="16" fill="#19201C" stroke="#3A4640"/>
+    <circle cx="726" cy="121" r="7" fill="#E5A15F"/>
+    <text x="748" y="130"
           fill="#F3F0E8"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="22">inbox/</text>
-    <text x="150" y="74"
+          font-size="23">inbox/</text>
+    <text x="856" y="128"
           fill="#AEB8AF"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
           font-size="18">unprocessed capture</text>
 
-    <path d="M212 94V108" stroke="#E5A15F" stroke-width="2"/>
-    <path d="M207 103L212 109L217 103" fill="none" stroke="#E5A15F" stroke-width="2"/>
+    <path d="M922 150V171M915 164L922 171L929 164" fill="none" stroke="#E5A15F" stroke-width="2"/>
 
-    <g id="evidence">
-      <rect x="0" y="116" width="202" height="96" rx="14" fill="#19201C" stroke="#3A4640"/>
-      <rect x="0" y="116" width="5" height="96" rx="2.5" fill="#E5A15F"/>
-      <text x="22" y="143"
-            fill="#E5A15F"
+    <g id="evidence-layer">
+      <rect x="700" y="180" width="212" height="102" rx="16" fill="#19201C" stroke="#3A4640"/>
+      <rect x="700" y="180" width="5" height="102" rx="2.5" fill="#E5A15F"/>
+      <text x="724" y="211" fill="#E5A15F"
             font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-            font-size="13" letter-spacing="1">01 / EVIDENCE</text>
-      <text x="22" y="174"
-            fill="#F3F0E8"
+            font-size="15" letter-spacing="1.3">01 / EVIDENCE</text>
+      <text x="724" y="245" fill="#F3F0E8"
             font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-            font-size="21">library/</text>
-      <text x="22" y="198"
-            fill="#B7C2B9"
+            font-size="23">library/</text>
+      <text x="724" y="270" fill="#AEB8AF"
             font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-            font-size="17">→ sources/</text>
+            font-size="18">→ sources/</text>
     </g>
 
-    <g id="world-knowledge">
-      <rect x="222" y="116" width="202" height="96" rx="14" fill="#19201C" stroke="#3A4640"/>
-      <rect x="222" y="116" width="5" height="96" rx="2.5" fill="#9BC4A4"/>
-      <text x="244" y="143"
-            fill="#9BC4A4"
+    <g id="world-layer">
+      <rect x="932" y="180" width="212" height="102" rx="16" fill="#19201C" stroke="#3A4640"/>
+      <rect x="932" y="180" width="5" height="102" rx="2.5" fill="#9BC4A4"/>
+      <text x="956" y="211" fill="#9BC4A4"
             font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-            font-size="13" letter-spacing="1">02 / WORLD</text>
-      <text x="244" y="174"
-            fill="#F3F0E8"
+            font-size="15" letter-spacing="1.3">02 / WORLD</text>
+      <text x="956" y="245" fill="#F3F0E8"
             font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-            font-size="21">wiki/</text>
-      <text x="244" y="198"
-            fill="#B7C2B9"
-            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-            font-size="17">synthesis</text>
+            font-size="23">wiki/</text>
+      <text x="956" y="270" fill="#AEB8AF"
+            font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+            font-size="18">synthesis</text>
     </g>
 
-    <g id="personal-memory">
-      <rect x="0" y="228" width="202" height="96" rx="14" fill="#19201C" stroke="#3A4640"/>
-      <rect x="0" y="228" width="5" height="96" rx="2.5" fill="#8CB5D1"/>
-      <text x="22" y="255"
-            fill="#8CB5D1"
+    <g id="personal-layer">
+      <rect x="700" y="298" width="212" height="102" rx="16" fill="#19201C" stroke="#3A4640"/>
+      <rect x="700" y="298" width="5" height="102" rx="2.5" fill="#8CB5D1"/>
+      <text x="724" y="329" fill="#8CB5D1"
             font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-            font-size="13" letter-spacing="1">03 / PERSONAL</text>
-      <text x="22" y="286"
-            fill="#F3F0E8"
+            font-size="15" letter-spacing="1.3">03 / PERSONAL</text>
+      <text x="724" y="363" fill="#F3F0E8"
             font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-            font-size="21">memory/</text>
-      <text x="22" y="310"
-            fill="#B7C2B9"
+            font-size="23">memory/</text>
+      <text x="724" y="388" fill="#AEB8AF"
             font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-            font-size="18">records · events</text>
+            font-size="17">records · state</text>
     </g>
 
-    <g id="action-context">
-      <rect x="222" y="228" width="202" height="96" rx="14" fill="#19201C" stroke="#3A4640"/>
-      <rect x="222" y="228" width="5" height="96" rx="2.5" fill="#D99778"/>
-      <text x="244" y="255"
-            fill="#D99778"
+    <g id="action-layer">
+      <rect x="932" y="298" width="212" height="102" rx="16" fill="#19201C" stroke="#3A4640"/>
+      <rect x="932" y="298" width="5" height="102" rx="2.5" fill="#D99778"/>
+      <text x="956" y="329" fill="#D99778"
             font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-            font-size="13" letter-spacing="1">04 / ACTION</text>
-      <text x="244" y="286"
-            fill="#F3F0E8"
+            font-size="15" letter-spacing="1.3">04 / ACTION</text>
+      <text x="956" y="363" fill="#F3F0E8"
             font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-            font-size="21">projects/</text>
-      <text x="244" y="310"
-            fill="#B7C2B9"
+            font-size="23">projects/</text>
+      <text x="956" y="388" fill="#AEB8AF"
             font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-            font-size="17">+ areas/</text>
+            font-size="18">+ areas/</text>
     </g>
 
-    <path d="M0 346H424" stroke="#3A4640" stroke-width="1"/>
-    <circle cx="0" cy="346" r="4" fill="#E5A15F"/>
-    <text x="16" y="352"
-          fill="#B7C2B9"
+    <circle cx="700" cy="430" r="4" fill="#E5A15F"/>
+    <text x="718" y="436" fill="#AEB8AF"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="15">separate meaning / preserve connection</text>
+          font-size="16">separate meaning / preserve connection</text>
+    <path d="M1036 430H1144" stroke="#2A332E" stroke-width="1"/>
   </g>
 </svg>
