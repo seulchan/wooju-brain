@@ -154,3 +154,11 @@ The projects should remain architecturally independent. Retrieval should come be
 ## Status
 
 Early architecture. The immediate goal is to validate the boundaries and workflows with real usage before adding heavier retrieval infrastructure or runtime integration.
+
+## License
+
+Wooju Brain is licensed under the PolyForm Noncommercial License 1.0.0.
+
+Noncommercial use is permitted. Commercial use requires separate permission.
+
+See [LICENSE](LICENSE) for details.
