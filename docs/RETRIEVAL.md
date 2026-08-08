@@ -48,6 +48,29 @@ For project questions:
 project state -> project decisions -> relevant memory -> wiki -> sources
 ```
 
+## Using derived insight
+
+Derived insight is stored in the existing semantic destinations, not in a
+separate retrieval layer. When an answer may depend on one:
+
+- use `established` insights as derived knowledge while retaining their origin
+  and `derived_from` provenance;
+- include `provisional` insights or insights marked
+  `epistemic.status: contested` only with their uncertainty and challenge
+  limits visible;
+- use `candidate` insights mainly for explicit exploration or deep synthesis,
+  not as settled answers;
+- exclude `rejected` and `superseded` insights from ordinary current answers
+  unless the question concerns their history or failure;
+- inspect the pages in `derived_from` to understand the premises, but never
+  treat those links as proof that the sources stated the derived relationship.
+
+When an answer materially relies on an insight, distinguish the
+source-backed knowledge, the derived interpretation, and the remaining
+uncertainty. A useful insight may guide exploration or a project experiment,
+but it must not override stronger contradictory evidence. Whole-brain deep
+synthesis is retrieval work only when the user explicitly requests it.
+
 ## Never infer current state from stale history
 
 A historical event or old state record is evidence about the past, not automatic proof of the present.

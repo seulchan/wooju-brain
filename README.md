@@ -42,6 +42,24 @@ Start with the filesystem:
 
 The structure is intentionally conservative. It should grow from real usage, not from a pre-built topic taxonomy.
 
+## Synthesis without epistemic leakage
+
+Wooju Brain supports two related operations:
+
+- **Synthesis** reorganizes, compares, or integrates existing knowledge without materially adding a claim.
+- **Insight** derives a new relationship or abstraction that no single supporting source explicitly states.
+
+Derived insights remain in the existing semantic locations—`wiki/`, `projects/`, or `areas/`—rather than a new insight store. A durable insight records `origin: synthesis`, one of five small insight kinds (`pattern`, `connection`, `tension`, `implication`, or `hypothesis`), a lifecycle `status`, and `derived_from` links. Those links show where the idea came from; they do not prove the derived relationship.
+
+The lifecycle is deliberately lightweight:
+
+```text
+knowledge → candidate → challenge → provisional → support/testing → established
+                              ↘ rejected       ↘ superseded (when replaced)
+```
+
+Local synthesis is a focused part of normal ingest and does not force an insight from every source. Deep synthesis runs only after an explicit user request. Candidate and provisional ideas remain visibly derived and uncertain; reusable world insights and project-specific implications are routed to different canonical homes. See [`docs/SYNTHESIS.md`](docs/SYNTHESIS.md) for the page shape, challenge checklist, rigorous-mode integration, and examples.
+
 ## Boundaries that keep memory trustworthy
 
 - **Provenance:** `sources/` records what evidence says; `wiki/` records reusable understanding about the world.
@@ -63,6 +81,7 @@ Both modes use the same canonical structure. Rigorous verification strengthens t
 | Task | Read before work |
 | --- | --- |
 | Add or synthesize knowledge | [`docs/KNOWLEDGE.md`](docs/KNOWLEDGE.md) |
+| Derive or review an insight | [`docs/SYNTHESIS.md`](docs/SYNTHESIS.md) |
 | Verify claims rigorously | [`docs/EPISTEMICS.md`](docs/EPISTEMICS.md) |
 | Create or update personal memory | [`docs/MEMORY.md`](docs/MEMORY.md) |
 | Work on a project or area | [`docs/WORK.md`](docs/WORK.md) |
@@ -104,6 +123,7 @@ wooju-brain/
 │
 ├── docs/                     # task-specific operating manuals
 │   ├── KNOWLEDGE.md          # sources, wiki, synthesis, evidence quality
+│   ├── SYNTHESIS.md          # derived insight lifecycle and challenge rules
 │   ├── EPISTEMICS.md         # rigorous claim verification and human review
 │   ├── MEMORY.md             # personal-memory admission and lifecycle rules
 │   ├── WORK.md               # projects and ongoing areas
@@ -136,6 +156,7 @@ wooju-brain/
 - **Provenance-aware.** Durable claims preserve where they came from.
 - **Temporal.** Mutable personal facts do not silently become timeless truths.
 - **Connected.** Useful knowledge accumulates into synthesis rather than isolated notes.
+- **Challenged.** Derived insight is challenged before it is promoted.
 - **Selective.** Future usefulness matters more than maximum capture.
 - **Agent-neutral.** The system should work with different AI assistants.
 - **Evolutionary.** Add indexing, automation, and runtime components only when real usage requires them.

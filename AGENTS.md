@@ -51,6 +51,7 @@ Before making changes:
 | Task | Read first |
 |---|---|
 | Add or synthesize external knowledge | `docs/KNOWLEDGE.md` |
+| Derive, challenge, or promote an insight | `docs/SYNTHESIS.md` |
 | Perform rigorous claim verification or human review | `docs/EPISTEMICS.md` |
 | Create or update personal memory | `docs/MEMORY.md` |
 | Work on projects or ongoing life areas | `docs/WORK.md` |
@@ -145,6 +146,10 @@ Do not delegate semantic reading, synthesis, personal interpretation, or durable
 ### 11. Preserve uncertainty, disagreement, and history
 
 Do not collapse conflicting evidence, stale information, or model inference into a falsely confident current claim. When newer evidence changes knowledge or personal state, update the canonical current representation while preserving meaningful history and supersession links where useful.
+
+### 12. Keep synthesis distinct from sourced fact
+
+Synthesis reorganizes or compares existing knowledge without materially adding a claim. An insight is a newly derived relationship or abstraction and is not source-backed fact merely because its premises are. Every durable derived insight preserves `origin: synthesis`, an allowed `insight_kind`, a lifecycle `status`, and non-empty `derived_from` provenance; `derived_from` records derivation, not proof. Challenge an insight before promoting it. Candidate and provisional insights must not be presented as settled knowledge, and project-specific implications stay in project context unless they genuinely generalize.
 
 ---
 

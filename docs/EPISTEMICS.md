@@ -13,6 +13,26 @@ The goal is not to make the human a truth oracle. The goal is to make evidence, 
 5. **Conflicts stay visible.** Do not silently choose a winner when credible evidence materially disagrees.
 6. **Verification depth should match consequence.** Spend effort on claims whose error would materially change understanding, action, or decisions.
 
+## Derived insights
+
+An insight may combine well-supported premises into a relationship that no
+single source explicitly states. Inference remains inference even when every
+premise is source-backed. The insight's `derived_from` links make its origin
+inspectable; they do not constitute evidence that the linked pages stated the
+derived relationship.
+
+For a derived insight, keep two questions separate:
+
+1. **Lifecycle:** Is the idea `candidate`, `provisional`, or `established` as a
+   result of challenge, additional support, testing, or repeated useful use?
+2. **Epistemic assessment:** How strong and contested are the material claims
+   under this rigorous verification process?
+
+The lifecycle is represented by the insight page's top-level `status`. The
+existing nested `epistemic.status` is used for the material claim when a
+rigorous assessment is warranted. Do not use an `established` lifecycle state
+to imply that a source explicitly stated the relationship.
+
 ## What counts as a material claim
 
 A material claim is one whose truth or falsity would meaningfully affect the durable page, a downstream conclusion, a project decision, or future retrieval.
@@ -86,7 +106,7 @@ Do not perform ceremonial searches merely to satisfy a count.
 
 ### 5. Assess the claim
 
-Use these statuses:
+Use these statuses for `epistemic.status`:
 
 - `established` — strong enough for normal durable use within the stated scope;
 - `provisional` — useful but evidence is incomplete, indirect, narrow, or still uncertain;

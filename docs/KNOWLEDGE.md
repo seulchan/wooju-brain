@@ -104,6 +104,33 @@ Keep them generic enough to reuse. Project-specific runbooks stay in the project
 
 Reusable reasoning patterns, heuristics, tradeoff frameworks, and decision lenses. Do not store one-off personal decisions here.
 
+## Synthesis and insight
+
+Synthesis is a reorganization, comparison, or integration of existing
+knowledge that does not materially introduce a new claim. An insight is a new
+relationship or abstraction derived from existing knowledge that no single
+supporting source explicitly states. A source note can support the premises of
+an insight without proving the relationship itself.
+
+Use the existing semantic locations for derived insights; do not create an
+`insights/` or `trusted-wiki/` layer:
+
+- reusable general insight → the appropriate `wiki/` concept, overview, or
+  mental-model page;
+- unresolved evidence-seeking insight → `wiki/questions/`;
+- project-specific implication → the relevant `projects/` page;
+- ongoing management implication → the relevant `areas/` context.
+
+For the durable lifecycle, controlled kinds, frontmatter, challenge step, and
+local/deep synthesis procedures, read [`SYNTHESIS.md`](SYNTHESIS.md).
+
+When an insight is durable, mark it explicitly with `origin: synthesis`, one
+of the allowed `insight_kind` values, a lifecycle `status`, and non-empty
+`derived_from` links. `derived_from` records the derivation path and must not
+be treated as evidence that a linked page stated the derived claim. If direct
+external evidence later supports the relationship, record that support
+separately from the derivation provenance.
+
 ## Evidence quality
 
 When sources differ in authority, prefer the strongest evidence appropriate to the claim:
@@ -165,6 +192,12 @@ For material knowledge updates:
 - create a new page only when the idea deserves an independent retrieval target.
 
 A collection of disconnected source summaries is not a knowledge base.
+
+Local synthesis is useful when new material reveals a real connection,
+pattern, tension, implication, or hypothesis, but ingest must not force an
+insight from every source. Deep synthesis is reserved for an explicit user
+request. Every durable insight is challenged before promotion, and a
+project-specific implication is not silently generalized into world knowledge.
 
 ## Promotion from project experience
 

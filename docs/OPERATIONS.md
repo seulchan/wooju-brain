@@ -71,6 +71,7 @@ Validators should check, where applicable:
 - placeholder prose;
 - stale generated indexes;
 - conflicting controlled-vocabulary tags;
+- derived insight metadata with an allowed `insight_kind` and lifecycle `status`, non-empty `derived_from`, and a `## Challenge` section;
 - personal state marked current after a known superseding record;
 - superseded records without a replacement link when one exists;
 - project or area links pointing to archived material without explanation.

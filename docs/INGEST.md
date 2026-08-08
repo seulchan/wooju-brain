@@ -84,15 +84,39 @@ If new material changes an existing claim, personal record, event interpretation
 
 Prefer updating the canonical record while preserving meaningful history.
 
-## Step 5 — connect implications
+## Step 5 — connect implications and perform local synthesis
 
 If new knowledge affects a project or area, update that context with the implication rather than duplicating the full explanation.
 
 If a personal event changes current state, update the relevant `memory/state/` page and link back to the event when useful.
 
+After the material has been classified and the relevant existing pages have
+been read, perform the focused local synthesis pass in
+[`SYNTHESIS.md`](SYNTHESIS.md):
+
+1. Identify whether the material strengthens, narrows, contradicts, connects,
+   or meaningfully extends existing knowledge.
+2. If it only reorganizes existing claims, update the canonical page as
+   synthesis and do not create an insight.
+3. If it reveals a genuinely useful new relationship, create a `candidate`
+   insight in its semantic destination with `origin: synthesis`, an allowed
+   `insight_kind`, and non-empty `derived_from` links.
+4. Challenge the candidate before moving it to `provisional`. Record concise
+   counterpoints, scope limits, stale dependencies, and what would change the
+   assessment; do not store hidden reasoning traces.
+5. Keep project-specific implications in the project unless later work shows
+   that they generalize.
+
+This is a lightweight pass, not a whole-brain synthesis run. It is valid and
+often preferable to find no insight. Deep synthesis occurs only on an
+explicit user request.
+
 ## Step 6 — validate and log
 
-Run relevant validators and rebuild generated indexes when needed.
+Run relevant validators and rebuild generated indexes when needed. For a
+durable insight, also check that the controlled metadata is valid, `derived_from`
+is non-empty, and the page contains an explicit `## Challenge` assessment
+before promotion beyond `candidate`.
 
 Log structural changes, contradictions, supersessions, migrations, and durable decisions that future agents need to understand.
 
