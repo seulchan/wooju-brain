@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="420" viewBox="0 0 1200 420"
+     role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">wooju-brain: what survives across runs</title>
+  <desc id="hero-desc">A dark editorial system map showing four separate boundaries: evidence, world knowledge, personal memory, and action context.</desc>
+
+  <rect width="1200" height="420" rx="28" fill="#101312"/>
+  <path d="M642 48V372" stroke="#2A332E" stroke-width="1"/>
+  <path d="M64 86H96" stroke="#E5A15F" stroke-width="4"/>
+
+  <g id="hero-title-block">
+    <text x="64" y="66"
+          fill="#E5A15F"
+          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="17" letter-spacing="1.8">LOCAL-FIRST / KNOWLEDGE + MEMORY</text>
+
+    <text x="64" y="160"
+          fill="#F3F0E8"
+          font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+          font-size="62" font-weight="700">what survives</text>
+    <text x="64" y="220"
+          fill="#F3F0E8"
+          font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+          font-size="62" font-weight="700">across runs</text>
+
+    <text x="64" y="266"
+          fill="#C9D0C8"
+          font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+          font-size="20">A durable memory boundary for humans and</text>
+    <text x="64" y="295"
+          fill="#C9D0C8"
+          font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+          font-size="20">long-lived AI assistants.</text>
+
+    <text x="64" y="354"
+          fill="#88938B"
+          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="16" letter-spacing="1.1">WOOJU-BRAIN / EARLY ARCHITECTURE</text>
+    <text x="64" y="382"
+          fill="#88938B"
+          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="16">retrieval first · provenance aware · temporal by design</text>
+  </g>
+
+  <g id="boundary-map">
+    <text x="682" y="66"
+          fill="#88938B"
+          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="16" letter-spacing="1.1">FOUR BOUNDARIES / ONE MEMORY SYSTEM</text>
+
+    <g id="evidence">
+      <rect x="682" y="102" width="204" height="100" rx="14" fill="#19201C" stroke="#3A4640"/>
+      <rect x="682" y="102" width="5" height="100" rx="2.5" fill="#E5A15F"/>
+      <text x="704" y="130"
+            fill="#E5A15F"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="14" letter-spacing="1">01 / EVIDENCE</text>
+      <text x="704" y="163"
+            fill="#F3F0E8"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="20">library/</text>
+      <text x="704" y="188"
+            fill="#B7C2B9"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="18">→ sources/</text>
+    </g>
+
+    <g id="world-knowledge">
+      <rect x="912" y="102" width="204" height="100" rx="14" fill="#19201C" stroke="#3A4640"/>
+      <rect x="912" y="102" width="5" height="100" rx="2.5" fill="#9BC4A4"/>
+      <text x="934" y="130"
+            fill="#9BC4A4"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="14" letter-spacing="1">02 / WORLD</text>
+      <text x="934" y="163"
+            fill="#F3F0E8"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="20">wiki/</text>
+      <text x="934" y="188"
+            fill="#B7C2B9"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="18">synthesis</text>
+    </g>
+
+    <path d="M886 152H904" stroke="#E5A15F" stroke-width="2"/>
+    <path d="M899 147L905 152L899 157" fill="none" stroke="#E5A15F" stroke-width="2"/>
+
+    <g id="personal-memory">
+      <rect x="682" y="226" width="204" height="112" rx="14" fill="#19201C" stroke="#3A4640"/>
+      <rect x="682" y="226" width="5" height="112" rx="2.5" fill="#8CB5D1"/>
+      <text x="704" y="254"
+            fill="#8CB5D1"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="14" letter-spacing="1">03 / PERSONAL</text>
+      <text x="704" y="287"
+            fill="#F3F0E8"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="20">memory/</text>
+      <text x="704" y="310"
+            fill="#B7C2B9"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="15">records · events</text>
+      <text x="704" y="330"
+            fill="#B7C2B9"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="15">state</text>
+    </g>
+
+    <g id="action-context">
+      <rect x="912" y="226" width="204" height="112" rx="14" fill="#19201C" stroke="#3A4640"/>
+      <rect x="912" y="226" width="5" height="112" rx="2.5" fill="#D99778"/>
+      <text x="934" y="254"
+            fill="#D99778"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="14" letter-spacing="1">04 / ACTION</text>
+      <text x="934" y="287"
+            fill="#F3F0E8"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="20">projects/</text>
+      <text x="934" y="312"
+            fill="#B7C2B9"
+            font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+            font-size="18">+ areas/</text>
+    </g>
+
+    <path d="M682 356H1116" stroke="#3A4640" stroke-width="1"/>
+    <circle cx="682" cy="356" r="4" fill="#E5A15F"/>
+    <text x="698" y="362"
+          fill="#B7C2B9"
+          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="15">separate what a source says from what is true now</text>
+  </g>
+</svg>
