@@ -115,6 +115,37 @@ When sources differ in authority, prefer the strongest evidence appropriate to t
 
 Lower-tier material may help with discovery or intuition, but must not silently replace stronger evidence. Source quality does not remove the need to read what the source actually supports.
 
+Source quality and claim support are different. A strong source can contain tentative claims, and a weak source can contain a correct observation. Judge each material claim by the evidence that actually supports it.
+
+## Knowledge-quality modes
+
+Wooju Brain supports two levels of verification over the same durable structure:
+
+### `standard`
+
+Use for normal personal knowledge work. Preserve provenance, source boundaries, caveats, uncertainty, and meaningful conflicts without turning every note into a formal review workflow.
+
+`standard` never means unverified or careless. Do not:
+
+- treat search snippets, titles, abstracts, filenames, or AI summaries as sufficient evidence for a durable claim;
+- present model inference as sourced fact;
+- silently overwrite conflicting evidence;
+- claim to have read material that was not actually inspected.
+
+### `rigorous`
+
+Use when false knowledge would be costly or when the user explicitly requests stronger verification. In addition to all `standard` rules, identify material claims, inspect the strongest appropriate evidence, search for meaningful contradiction or independent support, preserve epistemic status, and request human review only when the unresolved risk justifies it.
+
+Read `docs/EPISTEMICS.md` for the rigorous workflow.
+
+The active mode is resolved in this order:
+
+```text
+explicit task request > wooju-brain.yaml > default standard
+```
+
+Both modes use the same `sources/` and `wiki/`. Rigorous verification strengthens existing knowledge rather than creating a parallel trusted wiki.
+
 ## Synthesis requirement
 
 The knowledge base should improve when new material is added.

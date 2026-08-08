@@ -2,6 +2,40 @@
 
 Read this document when capturing, classifying, importing, or promoting new material into durable storage.
 
+## Inbound workflow
+
+`inbox/` is the default drop zone for unprocessed material.
+
+Humans may place PDFs, books, notes, exported pages, transcripts, screenshots, or other files in `inbox/` without deciding their final destination.
+
+The agent is responsible for inspecting the material and deciding whether it should be:
+
+- retained in `library/`;
+- summarized in `sources/`;
+- synthesized into `wiki/`;
+- recorded in `memory/`;
+- attached to a `project/` or `area/`;
+- archived;
+- or discarded as not worth durable storage.
+
+Do not treat `inbox/` as permanent storage. Processed items should leave the inbox once their durable destination is clear.
+
+> **Humans capture to `inbox/`. Agents curate the brain.**
+
+## Choose the knowledge-quality mode
+
+Resolve the active mode before promoting external material into `wiki/`:
+
+```text
+explicit task request > wooju-brain.yaml > default standard
+```
+
+Use `standard` for normal low-friction ingestion. Use `rigorous` when the user requests it or when repository configuration enables it.
+
+Both modes must preserve provenance, uncertainty, source boundaries, and meaningful conflicts. `rigorous` additionally requires the claim-verification workflow in `docs/EPISTEMICS.md`.
+
+Do not silently switch modes because a topic merely appears important. The agent may recommend rigorous processing when false knowledge would be costly, but the configured or explicitly requested mode remains authoritative.
+
 ## Step 0 — decide whether it belongs
 
 Before storing anything, ask:
@@ -22,6 +56,8 @@ For personal memory, identify whether it came from the user explicitly, was conf
 ## Step 2 — capture only what is supported
 
 For external sources, do not generate a supposedly complete note from a title, abstract, metadata record, search snippet, or table of contents alone.
+
+In `standard` mode, preserve the distinction between what the source states and what the agent infers. In `rigorous` mode, identify material claims and verify them according to `docs/EPISTEMICS.md` before promoting them as durable world knowledge.
 
 For personal memory, do not broaden a specific statement into a more general claim than the user actually made.
 

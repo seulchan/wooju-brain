@@ -38,18 +38,20 @@ Optimize for future usefulness, not maximum capture.
 Before making changes:
 
 1. Re-read this file.
-2. Read the relevant task-specific document from `docs/` before specialized work.
-3. Inspect relevant existing pages before creating a new one.
-4. Check repository-local indexes, schemas, registries, or generated maps that may have changed.
-5. Do not rely on memory from a previous session for mutable facts, paths, project state, or repository structure.
-6. Prefer updating an existing durable page over creating a near-duplicate.
-7. For personal questions, verify whether information is current, historical, or superseded before using it.
+2. Read `wooju-brain.yaml` when present and resolve the active knowledge-quality mode.
+3. Read the relevant task-specific document from `docs/` before specialized work.
+4. Inspect relevant existing pages before creating a new one.
+5. Check repository-local indexes, schemas, registries, or generated maps that may have changed.
+6. Do not rely on memory from a previous session for mutable facts, paths, project state, or repository structure.
+7. Prefer updating an existing durable page over creating a near-duplicate.
+8. For personal questions, verify whether information is current, historical, or superseded before using it.
 
 ### Task-specific docs
 
 | Task | Read first |
 |---|---|
 | Add or synthesize external knowledge | `docs/KNOWLEDGE.md` |
+| Perform rigorous claim verification or human review | `docs/EPISTEMICS.md` |
 | Create or update personal memory | `docs/MEMORY.md` |
 | Work on projects or ongoing life areas | `docs/WORK.md` |
 | Ingest, classify, or promote new material | `docs/INGEST.md` |
@@ -116,23 +118,31 @@ Durable pages should connect to meaningful existing context when such a relation
 
 Prefer primary evidence when available. Lower-quality material may help with discovery or intuition but must not silently replace stronger evidence. Read `docs/KNOWLEDGE.md` for source-quality and synthesis rules.
 
-### 7. Do not fabricate completeness
+### 7. Knowledge quality is configurable; truthfulness is not
+
+The repository may operate in `standard` or `rigorous` knowledge-quality mode. `standard` minimizes friction while preserving source boundaries, provenance, uncertainty, and abstention. `rigorous` adds material-claim verification, contradiction search, epistemic status, and risk-based human review.
+
+An explicit task request overrides repository configuration; repository configuration overrides the default `standard` mode. Quality mode may change the depth of verification, but never permits fabricated support, hidden inference, or silent resolution of meaningful evidence conflicts.
+
+Read `docs/EPISTEMICS.md` whenever rigorous verification is active.
+
+### 8. Do not fabricate completeness
 
 If the user asks for all, exhaustive, complete, or comprehensive coverage, track the full set and report checked, excluded, failed, and unresolved items explicitly. Sampling is acceptable only when labeled as sampling.
 
-### 8. Protect sensitive information
+### 9. Protect sensitive information
 
 Do not store secrets, credentials, authentication material, private keys, recovery codes, government identifiers, financial account numbers, or similarly sensitive material in the knowledge graph.
 
 Minimize highly private personal detail even when relevant. The goal is useful memory, not exhaustive surveillance.
 
-### 9. Scripts do mechanics; agents do judgment
+### 10. Scripts do mechanics; agents do judgment
 
 Use deterministic scripts for extraction, validation, indexing, normalization, duplicate detection, migrations, and other repeatable mechanics.
 
 Do not delegate semantic reading, synthesis, personal interpretation, or durable memory creation to an opaque batch process without reviewable evidence.
 
-### 10. Preserve uncertainty, disagreement, and history
+### 11. Preserve uncertainty, disagreement, and history
 
 Do not collapse conflicting evidence, stale information, or model inference into a falsely confident current claim. When newer evidence changes knowledge or personal state, update the canonical current representation while preserving meaningful history and supersession links where useful.
 
@@ -143,6 +153,7 @@ Do not collapse conflicting evidence, stale information, or model inference into
 ```text
 personal-kb/
 ├── AGENTS.md              # constitution
+├── wooju-brain.yaml       # repository-level behavior settings
 ├── docs/                  # task-specific operating manuals
 ├── inbox/                 # unprocessed capture
 ├── library/               # retained source artifacts/references
@@ -171,6 +182,7 @@ Before creating or changing a durable record, ask:
 4. **Canonical home:** Am I updating the right existing record rather than duplicating it?
 5. **Connection:** Does it affect an existing concept, state, project, area, or decision?
 6. **Uncertainty:** Am I preserving inference, disagreement, and missing evidence instead of hiding them?
-7. **Procedure:** Have I read the relevant task-specific document before applying detailed rules?
+7. **Quality:** Am I applying the active `standard` or `rigorous` knowledge-quality mode correctly?
+8. **Procedure:** Have I read the relevant task-specific document before applying detailed rules?
 
 When in doubt, preserve the distinction between **evidence, world knowledge, personal memory, action context, inference, event, and current state**.

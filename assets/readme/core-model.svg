@@ -1,141 +1,138 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="1200" height="500" viewBox="0 0 1200 500"
+     width="1200" height="450" viewBox="0 0 1200 450"
      role="img" aria-labelledby="model-title model-desc">
   <title id="model-title">The wooju-brain core model</title>
-  <desc id="model-desc">Four columns describe the repository boundaries: evidence, world knowledge, personal memory, and action context, with an evidence-to-synthesis link from library and sources to wiki.</desc>
+  <desc id="model-desc">Four connected columns show the repository boundaries: evidence, world knowledge, personal memory, and action context. Each column has its own canonical path and question.</desc>
 
-  <rect width="1200" height="500" rx="26" fill="#F4F1EA"/>
-  <text x="56" y="62"
+  <rect width="1200" height="450" rx="26" fill="#F4F1EA"/>
+
+  <text x="56" y="58"
         fill="#69766D"
         font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-        font-size="16" letter-spacing="1.3">THE CORE MODEL / KEEP MEANINGS DISTINCT</text>
-  <text x="56" y="112"
+        font-size="15" letter-spacing="1.3">THE CORE MODEL / KEEP MEANINGS DISTINCT</text>
+  <text x="56" y="108"
         fill="#171B19"
         font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-        font-size="38" font-weight="700">One repository, four durable boundaries.</text>
-  <text x="56" y="148"
+        font-size="39" font-weight="700">One repository, four durable boundaries.</text>
+  <text x="56" y="145"
         fill="#536057"
         font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-        font-size="20">Each layer answers a different question; links carry context without collapsing it.</text>
+        font-size="19">Links carry context. Boundaries preserve meaning.</text>
 
   <g id="evidence-column">
-    <rect x="56" y="200" width="246" height="226" rx="18" fill="#FFFDF8" stroke="#CEC7BA" stroke-width="1.5"/>
-    <rect x="56" y="200" width="246" height="6" rx="3" fill="#E5A15F"/>
-    <text x="78" y="242"
+    <rect x="56" y="190" width="254" height="184" rx="18" fill="#FFFDF8" stroke="#CEC7BA" stroke-width="1.5"/>
+    <rect x="56" y="190" width="254" height="7" rx="3.5" fill="#E5A15F"/>
+    <text x="78" y="232"
           fill="#C07C36"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="15" letter-spacing="1.1">01 / EVIDENCE</text>
-    <text x="78" y="282"
+          font-size="14" letter-spacing="1">01 / EVIDENCE</text>
+    <text x="78" y="274"
           fill="#171B19"
-          font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="27" font-weight="700">library/</text>
-    <text x="78" y="312"
+          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="26" font-weight="700">library/</text>
+    <text x="78" y="304"
           fill="#48564D"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="21">sources/</text>
-    <path d="M78 334H266" stroke="#D8D0C3" stroke-width="1"/>
-    <text x="78" y="366"
+          font-size="20">→ sources/</text>
+    <path d="M78 326H288" stroke="#D8D0C3" stroke-width="1"/>
+    <text x="78" y="353"
           fill="#536057"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="19">What does this</text>
-    <text x="78" y="392"
+          font-size="18">What does a source</text>
+    <text x="78" y="376"
           fill="#536057"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="19">source support?</text>
+          font-size="18">actually support?</text>
   </g>
 
   <g id="world-column">
-    <rect x="326" y="200" width="246" height="226" rx="18" fill="#FFFDF8" stroke="#CEC7BA" stroke-width="1.5"/>
-    <rect x="326" y="200" width="246" height="6" rx="3" fill="#9BC4A4"/>
-    <text x="348" y="242"
+    <rect x="334" y="190" width="254" height="184" rx="18" fill="#FFFDF8" stroke="#CEC7BA" stroke-width="1.5"/>
+    <rect x="334" y="190" width="254" height="7" rx="3.5" fill="#9BC4A4"/>
+    <text x="356" y="232"
           fill="#4F8660"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="15" letter-spacing="1.1">02 / WORLD KNOWLEDGE</text>
-    <text x="348" y="282"
+          font-size="14" letter-spacing="1">02 / WORLD KNOWLEDGE</text>
+    <text x="356" y="274"
           fill="#171B19"
-          font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="27" font-weight="700">wiki/</text>
-    <text x="348" y="312"
+          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="26" font-weight="700">wiki/</text>
+    <text x="356" y="304"
           fill="#48564D"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="21">synthesis</text>
-    <path d="M348 334H536" stroke="#D8D0C3" stroke-width="1"/>
-    <text x="348" y="366"
+          font-size="20">synthesis</text>
+    <path d="M356 326H566" stroke="#D8D0C3" stroke-width="1"/>
+    <text x="356" y="353"
           fill="#536057"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="19">What do we</text>
-    <text x="348" y="392"
+          font-size="18">What do we</text>
+    <text x="356" y="376"
           fill="#536057"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="19">understand now?</text>
+          font-size="18">understand now?</text>
   </g>
 
-  <path d="M302 228H320" stroke="#C07C36" stroke-width="2"/>
-  <path d="M315 223L321 228L315 233" fill="none" stroke="#C07C36" stroke-width="2"/>
-  <text x="298" y="455"
-        text-anchor="end"
-        fill="#8C6A45"
-        font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-        font-size="15">source → synthesis</text>
+  <path d="M310 220H328" stroke="#C07C36" stroke-width="2"/>
+  <path d="M323 215L329 220L323 225" fill="none" stroke="#C07C36" stroke-width="2"/>
 
   <g id="personal-column">
-    <rect x="596" y="200" width="246" height="226" rx="18" fill="#FFFDF8" stroke="#CEC7BA" stroke-width="1.5"/>
-    <rect x="596" y="200" width="246" height="6" rx="3" fill="#8CB5D1"/>
-    <text x="618" y="242"
+    <rect x="612" y="190" width="254" height="184" rx="18" fill="#FFFDF8" stroke="#CEC7BA" stroke-width="1.5"/>
+    <rect x="612" y="190" width="254" height="7" rx="3.5" fill="#8CB5D1"/>
+    <text x="634" y="232"
           fill="#527B98"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="15" letter-spacing="1.1">03 / PERSONAL MEMORY</text>
-    <text x="618" y="282"
+          font-size="14" letter-spacing="1">03 / PERSONAL MEMORY</text>
+    <text x="634" y="274"
           fill="#171B19"
-          font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="27" font-weight="700">memory/</text>
-    <text x="618" y="312"
+          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="26" font-weight="700">memory/</text>
+    <text x="634" y="304"
           fill="#48564D"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="19">records · events</text>
-    <text x="618" y="335"
-          fill="#48564D"
-          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="19">state</text>
-    <path d="M618 354H806" stroke="#D8D0C3" stroke-width="1"/>
-    <text x="618" y="386"
+          font-size="18">records · events</text>
+    <path d="M634 326H844" stroke="#D8D0C3" stroke-width="1"/>
+    <text x="634" y="353"
           fill="#536057"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="19">What is known</text>
-    <text x="618" y="412"
+          font-size="18">What is known</text>
+    <text x="634" y="376"
           fill="#536057"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="19">about the user?</text>
+          font-size="18">about the user, and when?</text>
   </g>
 
   <g id="action-column">
-    <rect x="866" y="200" width="278" height="226" rx="18" fill="#FFFDF8" stroke="#CEC7BA" stroke-width="1.5"/>
-    <rect x="866" y="200" width="278" height="6" rx="3" fill="#D99778"/>
-    <text x="888" y="242"
+    <rect x="890" y="190" width="254" height="184" rx="18" fill="#FFFDF8" stroke="#CEC7BA" stroke-width="1.5"/>
+    <rect x="890" y="190" width="254" height="7" rx="3.5" fill="#D99778"/>
+    <text x="912" y="232"
           fill="#A7644A"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="15" letter-spacing="1.1">04 / ACTION CONTEXT</text>
-    <text x="888" y="282"
+          font-size="14" letter-spacing="1">04 / ACTION CONTEXT</text>
+    <text x="912" y="274"
           fill="#171B19"
-          font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="27" font-weight="700">projects/</text>
-    <text x="888" y="312"
+          font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+          font-size="26" font-weight="700">projects/</text>
+    <text x="912" y="304"
           fill="#48564D"
           font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
-          font-size="21">+ areas/</text>
-    <path d="M888 334H1110" stroke="#D8D0C3" stroke-width="1"/>
-    <text x="888" y="366"
+          font-size="20">+ areas/</text>
+    <path d="M912 326H1122" stroke="#D8D0C3" stroke-width="1"/>
+    <text x="912" y="353"
           fill="#536057"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="19">What is being</text>
-    <text x="888" y="392"
+          font-size="18">What is being</text>
+    <text x="912" y="376"
           fill="#536057"
           font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-          font-size="19">done or managed?</text>
+          font-size="18">done or managed?</text>
   </g>
 
-  <path d="M842 228H860" stroke="#8A928B" stroke-width="1.5" stroke-dasharray="4 5"/>
-  <text x="844" y="455"
+  <path d="M56 404H1144" stroke="#CEC7BA" stroke-width="1"/>
+  <circle cx="56" cy="404" r="4" fill="#E5A15F"/>
+  <text x="72" y="410"
+        fill="#69766D"
+        font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="15">source → synthesis</text>
+  <text x="1144" y="410"
         text-anchor="end"
         fill="#69766D"
         font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
